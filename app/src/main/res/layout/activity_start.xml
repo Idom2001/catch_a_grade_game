@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/school_1_"
+    tools:ignore="SpUsage">
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="@string/please_choose_option_to_start"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/game_over_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/please_enter_your_name" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/start_play"
+        android:textStyle="bold"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/green"
+        android:layout_margin="@dimen/default_margin"
+        android:textAllCaps="true"
+        android:text="@string/play"
+        android:contentDescription= "@string/play"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/start_recordTable"
+        android:textStyle="bold"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/green"
+        android:clickable="true"
+        android:layout_margin="@dimen/default_margin"
+        android:textAllCaps="true"
+        android:text="@string/record_table"
+        android:contentDescription= "@string/record_table"
+        />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/speedLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="9dp"
+            android:text="@string/slow"
+            android:textStyle="bold"
+            android:textSize="@dimen/startSize_text"/>
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/start_speed_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/fast"
+            android:textOff="@string/slow" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="9dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/startSize_text"
+            android:text="@string/fast"
+             />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/stateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="9dp"
+            android:text="@string/arrows"
+            android:textStyle="bold"
+            android:textSize="@dimen/startSize_text"/>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/start_mode_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/tilt"
+        android:textOff="@string/arrows" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="9dp"
+            android:text="@string/tilt"
+            android:textStyle="bold"
+            android:textSize="@dimen/startSize_text"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

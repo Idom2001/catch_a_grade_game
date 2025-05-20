@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Catch Grade</string>
+    <string name="move_right">move right</string>
+    <string name="move_left">move left</string>
+    <string name="game_over">the game is over!😓</string>
+    <string name="play">Play</string>
+    <string name="record_table">Record Table</string>
+    <string name="fast">Fast</string>
+    <string name="slow">Slow</string>
+    <string name="tilt">Tilt</string>
+    <string name="arrows">Arrows</string>
+    <string name="please_choose_option_to_start">Please Choose option to start</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="_0">0</string>
+    <string name="distance">distance:</string>
+    <string name="points">points:</string>
+    <string name="actor_name">Actor name 🚩</string>
+    <string name="place">Place 🏆</string>
+    <string name="points_table">Points 🪙</string>
+    <string name="please_enter_your_name">Please Enter your name</string>
+    <string name="google_maps_key">AIzaSyDIv7KLflnK_KE_g4lxiM1EY8A-1XiLGBk</string>
+
+</resources>

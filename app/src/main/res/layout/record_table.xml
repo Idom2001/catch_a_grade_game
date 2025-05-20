@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#5E92F3">
+
+    <android.widget.TableLayout
+        android:id="@+id/high_scores_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_alignParentTop="true"
+        android:padding="40dp">
+
+        <TableRow>
+            <TextView
+                android:text="@string/place"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/actor_name"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/points_table"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <!-- row 1 -->
+        <TableRow>
+            <TextView android:text="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/table_1_place"
+                />
+            <TextView
+                android:id="@+id/table_1_place_name"/>
+            <TextView
+                android:id="@+id/table_1_place_points"/>
+        </TableRow>
+
+        <!-- row 2 -->
+        <TableRow>
+            <TextView android:text="2"
+                android:id="@+id/table_2_place"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/table_2_place_name"/>
+            <TextView
+                android:id="@+id/table_2_place_points"/>
+        </TableRow>
+
+        <!-- row 3 -->
+        <TableRow>
+            <TextView android:text="3"
+                android:id="@+id/table_3_place"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/table_3_place_name"/>
+            <TextView
+                android:id="@+id/table_3_place_points"/>
+        </TableRow>
+
+        <!-- row 4 -->
+        <TableRow>
+            <TextView android:text="4"
+                android:id="@+id/table_4_place"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/table_4_place_name"/>
+            <TextView
+                android:id="@+id/table_4_place_points"/>
+        </TableRow>
+
+        <!-- row 5 -->
+        <TableRow>
+            <TextView android:text="5"
+                android:id="@+id/table_5_place"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/table_5_place_name"/>
+            <TextView
+                android:id="@+id/table_5_place_points"/>
+        </TableRow>
+
+        <!-- row 6 -->
+        <TableRow>
+            <TextView android:text="6"
+                android:id="@+id/table_6_place"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/table_6_place_name"/>
+            <TextView
+                android:id="@+id/table_6_place_points"/>
+        </TableRow>
+
+        <!-- row 7 -->
+        <TableRow>
+            <TextView android:text="7"
+                android:id="@+id/table_7_place"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/table_7_place_name"/>
+            <TextView
+                android:id="@+id/table_7_place_points"/>
+        </TableRow>
+
+        <!-- row 8 -->
+        <TableRow>
+            <TextView android:text="8"
+                android:id="@+id/table_8_place"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/table_8_place_name"/>
+            <TextView
+                android:id="@+id/table_8_place_points"/>
+        </TableRow>
+
+        <!-- row 9 -->
+        <TableRow>
+            <TextView android:text="9"
+                android:id="@+id/table_9_place"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/table_9_place_name"/>
+            <TextView
+                android:id="@+id/table_9_place_points"/>
+        </TableRow>
+
+        <!-- row 10 -->
+        <TableRow>
+            <TextView android:text="10"
+                android:id="@+id/table_10_place"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/table_10_place_name"/>
+            <TextView
+                android:id="@+id/table_10_place_points"/>
+        </TableRow>
+
+    </android.widget.TableLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/high_scores_table"
+        android:layout_above="@id/record_back"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/record_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="true"
+        app:icon="@drawable/left_arrow"
+        />
+
+
+</RelativeLayout>
