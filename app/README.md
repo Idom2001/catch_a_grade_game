@@ -1,7 +1,7 @@
 # HW2 - Catch Grade 
 
 An Android obstacles game with control via buttons or device tilt sensor.
-The point is to run from grades and catch diplomas which gives you points 
+The point is to run from grades and catch diplomas which gives you 5 points for each
 
 ## Features 🏆
 - Control the player using buttons or by tilting the device
